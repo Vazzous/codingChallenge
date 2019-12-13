@@ -1,5 +1,17 @@
-
 // JavaScript Document
+window.onscroll = function() {sticky()};
+
+function sticky() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    var sticky = document.getElementById("nav-bar");
+    sticky.classList.add("sticky")
+  } else {
+    var sticky = document.getElementById("nav-bar");
+    sticky.classList.remove("sticky")
+  }
+}
+
+
 
 function div (){
 	var premierNombre = document.getElementById("div1").value;
@@ -148,4 +160,4 @@ function div2(){
 		var rec = document.getElementById('var-mod').innerHTML = valeur;
 		var util =eval(rec);
 		document.getElementById('var-mod').innerHTML = valeur;
-}
+}}
