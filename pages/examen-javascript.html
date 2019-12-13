@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Contact</title>
+<title>Exams</title>
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
@@ -17,22 +17,30 @@
 	</div>
 </nav>
 	
-<div id="content"> 
-	<div id="contact">
-		<h1>Contactez nous</h1>	
-		<h2>Cordonné de L'IUT</h2>
-		<h4 class="coordonnees">Adresse</h4> <p> 5 Rue d'une ville, 77110, Ville</p>
-		<h4 class="coordonnees">Mail</h4> <p>BelIUT@Internet.web</p>
-		<h4 class="coordonnees">Numéros</h4> <p>0666666666</p>
-		<h4 class="coordonnees">Fax</h4> <p>0000000000</p>
-		<h2>Cordonné des WebMasters</h2>
-		<h4 class="coordonnees">Adresse</h4> <p> 6 Rue d'une ville, 77110, Ville</p>
-		<h4 class="coordonnees">Mail</h4> <p>LesGazificateurs@Internet.web</p>
-		<h4 class="coordonnees">Numéros</h4> <p>0666666661</p>
-		<h4 class="coordonnees">Fax</h4> <p>0000000001</p>
-	</div>
-</div>
+<h1>Bienvenu sur notre super examen</h1>	
+<input id="div1" placeholder="entrez un nombre" type="number"/><br>
+<input id="div2" placeholder="entrez un nombre" type="number"/><br>
+<button onclick="div()" class="exam-btn">Je divise les deux nombres</button><br>
+<p>Resultat : <span id="res-div"></span></p><br>
+	
+<p>Variable : <b><span id="var-mod"></span></b><br>
+<p>Ajoutez ce que vous voulez à la variable</p>
+<button onclick="ajoutZero()" class="exam-btn">0</button>
+<button onclick="ajoutUn()" class="exam-btn">1</button>
+<button onclick="ajoutDeux()" class="exam-btn">2</button>
+<button onclick="ajoutTrois()" class="exam-btn">3</button>
+<button onclick="ajoutQuatre()" class="exam-btn">4</button>
+<button onclick="ajoutCinq()" class="exam-btn">5</button>
+<button onclick="ajoutSix()" class="exam-btn">6</button>
+<button onclick="ajoutSept()" class="exam-btn">7</button>
+<button onclick="ajoutHuit()" class="exam-btn">8</button>
+<button onclick="ajoutNeuf()" class="exam-btn">9</button>
+<button onclick="div2()" class="exam-btn">/</button>
+<p>Converti : <b><span id="conv"></span></b><br>
 
+
+
+	
 <!--FOOTER-->    
 <footer>
 	<div class="footer">
@@ -57,7 +65,6 @@
 		</div>
 	</div>
 </footer>
-	
 <script src="../java/script.js"></script>
 </body>
 </html>
