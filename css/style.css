@@ -34,7 +34,7 @@ html, body{
 	background-color: #111;
 	color : white;
 	border: none;
-	height: 50px;
+	height: 40px;
 	width: 100px;
 	padding-top: 15px;
 }
@@ -46,7 +46,69 @@ html, body{
 	background-color: white;
 	color: black;
 	border: none;
-	height: 50px;
+	height: 40px;
 	width: 100px;
 	padding-top: 15px;
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: darkslateblue;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.footerg{
+    margin-left:50px;
+    position: relative;
+    height: 100%;
+    float: left;
+    width: 40%;
+
+}
+
+.footerd{
+    margin-right: 50px;
+    position: relative;
+    float: right;
+    width: 40%;
+    height: 100%;
+
+
+}
+
+.lien, ul, li{
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lien{
+    color: white;
+    margin-left: 50px;
+}
+
+.lien:hover{
+    color: purple;
+}
+
+.footer h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left : 50px;
+}
+
+#content{
+	display: flex;
+}
+
+#contact{
+	display: block;
+	max-width: 1024px;
+	height : auto;
+
+	margin: auto;
 }
