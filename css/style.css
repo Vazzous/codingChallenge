@@ -1,12 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
-
 html, body{
-    margin: 0;
+	margin:0;
+	overflow: hidden;
 }
 
+
 #nav-bar{ 
-    margin: 0;
 	padding-left: 0px;
 	padding-top: 0px;
 	width: 100%;
@@ -19,6 +19,7 @@ html, body{
     position:fixed;
     top:0;
     z-index:1000;
+	background-color: #111;
 }
 
 #logo{
@@ -58,8 +59,6 @@ html, body{
 	padding-top: 15px;
 }
 
-
-
 .footer{
     position: relative;
     width: 100%;
@@ -67,7 +66,6 @@ html, body{
     background-color: darkslateblue;
     display: flex;
     justify-content: space-evenly;
-    
 }
 
 .footerg{
@@ -76,7 +74,6 @@ html, body{
     height: 100%;
     float: left;
     width: 40%;
-    
 }
 
 .footerd{
@@ -85,8 +82,6 @@ html, body{
     float: right;
     width: 40%;
     height: 100%;
-   
-    
 }
 
 .lien, ul, li{
@@ -112,6 +107,28 @@ html, body{
 
 .topsection{
     margin: 0;
+}
+
+#content{
+	display: flex;
+}
+
+#contact{
+	display: block;
+	max-width: 1024px;
+	height : auto;
+
+	margin: auto;
+}
+
+.topsection h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left : 50px;
+}
+
+.topsection{
+	padding-top : 0px;
     height: 250px;
     width: 100%;
     background-color: skyblue;

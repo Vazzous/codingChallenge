@@ -148,5 +148,4 @@ function div2(){
 		var rec = document.getElementById('var-mod').innerHTML = valeur;
 		var util =eval(rec);
 		document.getElementById('var-mod').innerHTML = valeur;
-    }
 }
