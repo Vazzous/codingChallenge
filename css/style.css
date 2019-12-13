@@ -2,10 +2,11 @@
 /* CSS Document */
 html, body{
 	margin:0;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
-
+h1{
+}
 #nav-bar{ 
 	padding-left: 0px;
 	padding-top: 0px;
@@ -156,4 +157,140 @@ html, body{
     font-weight: lighter;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    color: purple;
+}
+
+.footer h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left : 50px;
+}
+
+.sectionT{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnails{
+    padding-bottom: 40px;
+    width: 20%;
+    height: 100%;
+    background-color: tomato;
+    text-align: center;
+
+}
+
+.thumbnails img{
+
+    width: 100%;
+}
+
+.thumbnails h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.thumbnails a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+
+}
+
+.ligne1{
+    padding-top : 20px;
+    padding-bottom: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ligne2{
+    padding-top : 20px;
+    padding-bottom: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+} 
+
+.slidecontainer {
+  width: 100%; 
+}
+.slider {
+  -webkit-appearance: none;  
+  appearance: none;
+  width: 100%; 
+  height: 25px; 
+  background: #d3d3d3; 
+  outline: none; 
+  opacity: 0.7; 
+  -webkit-transition: .2s; 
+  transition: opacity .2s;
+}
+.slider:hover {
+  opacity: 1; 
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  width: 25px;
+  height: 25px; 
+  background: #4CAF50; 
+  cursor: pointer; 
+}
+.slider::-moz-range-thumb {
+  width: 25px; 
+  height: 25px; 
+  background: #4CAF50; 
+  cursor: pointer; 
+}
+
+.cercle{
+	width: 450px;
+	height: 450px;
+	border-radius: 100%;
+	background-color: blue;
+	position: absolute;
+}
+.gauche{
+	top : 25%;
+	left : -250px;
+}
+
+.droit{
+	top: 35%;
+	right: -250px;
+}
+
+.flou{
+	opacity: 0.5;
+	top : 10%;
+}
+
+div#panoramique{
+	padding : 50px;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	left : 0;
+}
+
+div#headline{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin: 0;
+	position: relative;
+	text-align: center;
+	color: red;
+	z-index: 10;
 }

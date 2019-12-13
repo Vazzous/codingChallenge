@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+html, body{
+	margin:0;
+	width: 2120px;
+	overflow: hidden;
+}
+
+#menu{
+	padding: 13px 13px;
+}
+
+.dropbtn{
+	background-color: #111;
+	color : white;
+	border: none;
+	height: 50px;
+	width: 100px;
+}
+
+.dropbtn:hover{
+	background-color: white;
+	color: black;
+	border: none;
+	height: 50px;
+	width: 100px;
+}
+
+#dropdown-content{
+	position : absolute;
+	display : none;
+	box-shadow: 4px 4px 8px 1px #111;
+}
+
+.item{
+	background-color: grey;
+	border: none;
+	height: 45px;
+	width: 100px;
+}
+
+.item:hover{
+	background-color: white;
+	border: none;
+	height: 45px;
+	width: 100px;
+}
+
+#dropdown:hover #dropdown-content{
+	display:flex;
+	flex-direction: column;
+}
+
+#nav {
+	width: 100%;
+	height: 55px;
+	background-color: #111;
+	display : flex;
+	justify-content: space-between;
+	transition: opacity 1s;
+	opacity: 1;
+	position: fixed;
+  	top: 0;
+}
+
+#nav.hide{
+	opacity: 0;
+}
+
+#logo {
+	height: 100%;
+}
+
+#centre{
+	display: block;
+	max-width: 1024px;
+	height : auto;
+	background-color: brown;
+	margin:auto;
+}
+
+
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+ 
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: flex;
+    transition: 0.3s
+}
+ 
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+ 
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#part2{
+	opacity: 0;
+	display: block;
+	max-width: 1024px;
+	height : auto;
+	background-color: green;
+	margin:auto;
+}
+
+#affiche{
+	width : 100%;
+}
+
+#part2.app{
+	opacity: 1;
+	transition: opacity 1s;
+}
+
+#part3{
+	display: block;
+	max-width: 1024px;
+	height : auto;
+	background-color: aquamarine;
+	margin:auto;
+}
+
+.big-div {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.less-big-div {
+  width: 200%;
+}
+
+.small-div-1 {
+  width: 50%;
+  float: left;
+  transition: margin-left 2s ease;
+}

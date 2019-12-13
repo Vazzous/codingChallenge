@@ -1,151 +1,46 @@
 // JavaScript Document
 
-function div (){
-	var premierNombre = document.getElementById("div1").value;
-	var secondNombre = document.getElementById("div2").value;
-	var resultDiv = premierNombre / secondNombre;
-    document.getElementById("res-div").innerHTML = resultDiv;
-}
+//censé fonctionner 
+var titre = ["Bienvenue","Bienvenido","Welcome"];
+var counter = 0;
+setTimeout(change, 3000);
 
-
-//Début ajout à 0
-var valeur = "Entrez un nombre";
-
-function depart(){
-	document.getElementById("var-mod").innerHTML = valeur;
-}
-window.onload = depart();
-
-function ajoutZero() {
-	if (valeur == "Entrez un nombre"){
-		valeur = 0;
-		valeur += 0;
-		document.getElementById('var-mod').innerHTML = valeur;
+function change() {
+	if (counter >= titre.length) {
+		counter = 0;
 	}
 	else{
-		valeur += "0";
-		document.getElementById('var-mod').innerHTML = valeur;
+		document.getElementById("titreIndex").innerHTML = titre[counter];
+		counter++;
 	}
 }
 
-function ajoutUn() {
-	if (valeur == "Entrez un nombre"){
-		valeur = 0;
-		valeur += 1;
-		document.getElementById('var-mod').innerHTML = valeur;
-	}
-	else{
-		valeur += "1";
-		document.getElementById('var-mod').innerHTML = valeur;
-	}
-}
+var slider = document.getElementById("monprix");
+var prix = document.getElementById("prixchoisi");
+prix.innerHTML = slider.value; // Display the default slider value
 
-function ajoutDeux() {
-	if (valeur == "Entrez un nombre"){
-		valeur = 0;
-		valeur += 2;
-		document.getElementById('var-mod').innerHTML = valeur;
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+	prix.innerHTML = this.value;	
+	if (slider.value<10){
+		document.getElementById('entreprise').style.opacity = "0.5";
+		document.getElementById('pro').style.opacity = "0.5";
+		document.getElementById('poorkiddo').style.opacity = "0.5";
+		
 	}
-	else{
-		valeur += "2";
-		document.getElementById('var-mod').innerHTML = valeur;
-	}
-}
-
-function ajoutTrois() {
-	if (valeur == "Entrez un nombre"){
-		valeur = 0;
-		valeur += 3;
-		document.getElementById('var-mod').innerHTML = valeur;
-	}
-	else{
-		valeur += "3";
-		document.getElementById('var-mod').innerHTML = valeur;
-	}
-}
-
-function ajoutQuatre() {
-	if (valeur == "Entrez un nombre"){
-		valeur = 0;
-		valeur += 4;
-		document.getElementById('var-mod').innerHTML = valeur;
-	}
-	else{
-		valeur += "4";
-		document.getElementById('var-mod').innerHTML = valeur;
-	}
-}
-
-function ajoutCinq() {
-	if (valeur == "Entrez un nombre"){
-		valeur = 0;
-		valeur += 5;
-		document.getElementById('var-mod').innerHTML = valeur;
-	}
-	else{
-		valeur += "5";
-		document.getElementById('var-mod').innerHTML = valeur;
-	}
-}
-
-function ajoutSix() {
-	if (valeur == "Entrez un nombre"){
-		valeur = 0;
-		valeur += 6;
-		document.getElementById('var-mod').innerHTML = valeur;
-	}
-	else{
-		valeur += "6";
-		document.getElementById('var-mod').innerHTML = valeur;
-	}
-}
-function ajoutSept() {
-	if (valeur == "Entrez un nombre"){
-		valeur = 0;
-		valeur += 7;
-		document.getElementById('var-mod').innerHTML = valeur;
-	}
-	else{
-		valeur += "7";
-		document.getElementById('var-mod').innerHTML = valeur;
-	}
-}
-function ajoutHuit() {
-	if (valeur == "Entrez un nombre"){
-		valeur = 0;
-		valeur += 8;
-		document.getElementById('var-mod').innerHTML = valeur;
-	}
-	else{
-		valeur += "8";
-		document.getElementById('var-mod').innerHTML = valeur;
-	}
-}
-function ajoutNeuf() {
-	if (valeur == "Entrez un nombre"){
-		valeur = 0;
-		valeur += 9;
-		document.getElementById('var-mod').innerHTML = valeur;
-	}
-	else{
-		valeur += "9";
-		document.getElementById('var-mod').innerHTML = valeur;
-	}
-}
-
-function div2(){
-	var resConv;
-	if (valeur == '' ){
-		var rec = document.getElementById('var-mod').innerHTML = valeur;
-		resConv = eval(rec);
-		alert(resConv);
-		document.getElementById('conv').innerHTML = resConv;
-		valeur += "/";
-		document.getElementById('var-mod').innerHTML = valeur;
-	}
-	else{
-		var rec = document.getElementById('var-mod').innerHTML = valeur;
-		var util =eval(rec);
-		document.getElementById('var-mod').innerHTML = valeur;
+	else if(slider.value<50){		
+		document.getElementById('entreprise').style.opacity = "0.5";
+		document.getElementById('pro').style.opacity = "0.5";
+		document.getElementById('poorkiddo').style.opacity = "1";
+	}	
+	else if(slider.value<79){	
+		document.getElementById('entreprise').style.opacity = "0.5";
+		document.getElementById('pro').style.opacity = "1";
+		document.getElementById('poorkiddo').style.opacity = "0.5";
+	}	
+	else{		
+		document.getElementById('entreprise').style.opacity = "1";
+		document.getElementById('pro').style.opacity = "0.5";
+		document.getElementById('poorkiddo').style.opacity = "0.5";
 	}
 }
