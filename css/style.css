@@ -54,3 +54,40 @@ h2{
     color: white;
     margin-left : 50px;
 }
+
+.topsection{
+    height: 250px;
+    width: 100%;
+    background-color: skyblue;
+    text-align: center;
+
+}
+
+.topsection h1 {
+    padding-top: 10px;
+    color: steelblue;
+    font-weight: bolder;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topsection a{
+    color: steelblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.topsection a:hover{
+    color: white;
+    background-color: steelblue;
+}
+
+.topsection h3{
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
